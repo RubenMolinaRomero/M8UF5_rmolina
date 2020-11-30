@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="cat">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulari 1 d'enregistrament</title>
+</head>
+<body>
+    <h1>Formulari bàsic de registre</h1>
+    <form action="#" method="GET">
+        <fieldset>
+            <label>Nom:</label><br>
+                <input type="text" name="Nom" id="Nom" size="20" maxlength="50" required><br>
+                <br>
+            <label for="Cognoms">Cognoms:</label><br>
+                <input type="text" name="Cognoms" id="Cognoms" size="20" maxlength="50" required><br>
+                <br>
+            <label for="Sexe">Sexe</label>
+                <select class="#" name="Sexe" id="Sexe">
+                    <option value="Home">Home</option>
+                    <option value="Dona">Dona</option>
+                </select>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label for="Correu">Correu electrònic:</label>
+                <input type="email" name="Correu" id="Correu">
+                <br>
+                <br>
+            <label for="població">Població:</label>
+                <select name="Població" id="població">
+                    <option value="Arbúcies">Arbúcies</option>
+                    <option value="Badalona">Badalona</option>
+                    <option value="Barcelona">Barcelona</option>
+                    <option value="Girona">Girona</option>
+                    <option value="Vilassar de Mar">Vilassar de Mar</option>
+                </select>
+            <br>
+            <br>
+            <label for="Descripció">Descripció:</label> <br>
+                <textarea name="Descripció" id="Descripció" cols="40" rows="5"></textarea>
+            <br>
+            <br>
+            <input type="checkbox" id="check1" checked>
+            <label for="check1"> <em>Vull rebre informació sobre novetats i ofertes.</em> </label>
+            <br>
+            <input type="checkbox" id="check2">
+            <label for="check2"> <em>Declaro haver llegit i acceptat les condicions generals del programa i la normativa<br>
+            sobre protecció de dades indicada al RGPD.</em> </label>
+            <br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="submit" name="Enviar" id="Enviar">
+    </fieldset>
+    </form>
+</body>
+</html>

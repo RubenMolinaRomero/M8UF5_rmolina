@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulari d'enviament</title>
+    <script type="text/javascript">
+        function validar() {
+            var psswd = document.getElementById("psswd").value;
+            var confpsswd = document.getElementById("confpsswd").value;
+            if (psswd == confpsswd) {
+                return true;
+            }
+            else {
+                alert("No coincideix");
+                return false;
+            }
+        }
+    </script>
+</head>
+
+<body style="font-family:Verdana;">
+    <form action="mailto:rub23mol@gmail.com">
+        <table style="width:50%; height:100%;background-color: background-color:#D6D6D6;">
+            <tr style="background-color: #035AB4; color: white;">
+                <td colspan="2"> <strong>Enviar missatge</strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><br></td>
+                <td><img src="img/gb_reload_s.gif" alt="imatge"></td>
+            </tr>
+            <tr>
+                <!--NOM-->
+                <td align="right">Nom:</td>
+                <td>
+                    <input type="text" name="nom" id="nom" size="50">
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <!--USUARI-->
+                <td align="right">Usuari:</td>
+                <td>
+                    <input type="text" name="Usuari" id="Usuari" size="50">
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <!--contrasenya-->
+                <td align="right">Contrasenya:</td>
+                <td>
+                    <input type="text" name="Contrasenya" id="Contrasenya" size="50">
+                </td>
+                <td></td>
+            </tr>
+            </tr>
+            <tr>
+                <!--Confirmacio Contrasenya-->
+                <td align="right"> Confirmació Contrasenya:</td>
+                <td>
+                    <input type="text" name="Con_Contrasenya" id="conpsswd" size="50">
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <!--EMAIL-->
+                <td align="right">E-mail:</td>
+                <td>
+                    <input type="email" name="mail" id="mail" size="50">
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <!--ARXIU-->
+                <td align="right">Arxiu:</td>
+                <td>
+                    <input type="file" name="arxiu" id="arxiu">
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <!--IMATGE-->
+                <td align="right">Imatge:</td>
+                <td>
+                    <input type="file" name="imatge" id="imatge">
+                </td>
+                <td></td>
+            </tr>
+            <tr align="center">
+                <!--TEXT-->
+                <td colspan="3">
+                    <h6>El tamany de l'arxiu i la imatge no pot excedir els 4 KBytes</h6>
+                </td>
+            </tr>
+            <tr align="center">
+                <!--RADIO-->
+                <td colspan="3">
+                    Requereix resposta:<input type="radio" name="radio" id="si">Si
+                    <input type="radio" name="radio" id="no">No
+                    <br><br>
+                </td>
+
+            </tr>
+            <tr align="center">
+                <!--MISSATGE-->
+                <td colspan="3">Missatge</td>
+            </tr>
+            <tr align="center">
+                <!--MISSATGE-->
+                <td colspan="3">
+                    <textarea name="missatge" id="missatge" cols="40" rows="5"></textarea>
+                    <br><br>
+                </td>
+            </tr>
+            <tr align="center">
+                <!--botons-->
+                <td colspan="3">
+
+                    <input type="submit" value="Enviar">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="submit" value="Borrar">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
